@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-hand: 'Caveat', 'Patrick Hand', cursive;
+  --font-doodle: 'Gaegu', cursive;
+  --font-serif-romantic: 'Playfair Display', serif;
+  --font-sans: 'Nunito', system-ui, sans-serif;
+}
+
+:root {
+  font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Grid paper background pattern */
+.bg-grid-pattern {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(168, 85, 247, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.08) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, rgba(168, 85, 247, 0.15) 1px, transparent 1px);
+}
+
+/* Notebook binder lined paper */
+.bg-lined-paper {
+  background-color: #fdfbf7;
+  background-image: 
+    linear-gradient(#f1eee7 1px, transparent 1px);
+  background-size: 100% 28px;
+  line-height: 28px;
+}
+
+/* 3D Flip Card classes */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Washi tape effect */
+.washi-tape {
+  background: rgba(233, 213, 255, 0.7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f0fa;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8b4fe;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
